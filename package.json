@@ -1,0 +1,26 @@
+{
+  "name": "module-10_profile-gen",
+  "version": "1.0.0",
+  "description": "Module 10 Team Profile Gen",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js",
+    "watch": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sameersamuel/module-10_profile-gen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sameersamuel/module-10_profile-gen/issues"
+  },
+  "homepage": "https://github.com/sameersamuel/module-10_profile-gen#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^29.0.3"
+  }
+}
