@@ -10,8 +10,11 @@ const inquirer = require("inquirer")
 const path = require("path")
 // fs
 const fs = require("fs")
+const { clear } = require("console")
 
 //render page template
+const renderPage = require("./src/render-template");
+const outputPath = path.join(__dirname, "/dist/team.html");
 // html
 // ------ above imports
 
@@ -191,6 +194,8 @@ function mainMenu (){
     })
 }
     function createTeam(){
-        console.log("Team added!")
+        console.log("Team Members = ", teamMembers);
+        fs.writeFileSync(outputPath, renderPage(teamMembers), "utf8");
+        console.log("Team added!");
     }
         mainMenu();
